@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>haha</title>
+    <link href="{% static 'common.css' %}" rel="stylesheet" type="text/css">
+    <!-- 引入 Bootstrap -->
+     <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+     <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+     <script type="text/javascript" src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.js' %}"></script>
+
+</head>
+<body>
+<div class="container-left"></div>
+<div class="container-right">
+    <div class="container-top">
+        <span class="text-primary">管理</span> >>
+        {% block top %}
+
+        {% endblock %}
+    </div>
+    <div class="container-main">
+        {% block main %}
+
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

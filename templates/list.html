@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block main %}
+    <div>
+        <h1>{{ title }}</h1>
+        <ul>
+        {% for x in news %}
+            <li>
+                <a href="/news_detail/?addr={{ x.0 }}">{{ x.1 }}</a>
+                <a href="{{ x.0 }}" target="_blank"><i>源地址</i></a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

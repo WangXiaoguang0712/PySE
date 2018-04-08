@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block top %}
+    <span class="text-primary"> 抽取与处理</span>
+{% endblock %}
+{% block main %}
+    <div class="container-main">
+        <h3>{{ title }}</h3>
+        <div>
+            <ul class="list-group">
+            {% for x in list %}
+                <li class="list-group-item">
+                    <a href="/news_list/?c={{ x.0 }}">{{ x.1 }}({{ x.2 }})</a>: <a href="/grab_web/?c={{ x.0 }}">grab</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <h3>处理</h3>
+        <div>
+            <a href="/handle/">处理文本</a>
+        </div>
+    </div>
+{% endblock %}
+
+<script>
+
+</script>

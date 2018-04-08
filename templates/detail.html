@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="{% static 'common.css' %}" rel="stylesheet" type="text/css">
+    <!-- 引入 Bootstrap -->
+     <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+     <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+     <script type="text/javascript" src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.js' %}"></script>
+</head>
+<body>
+<div class="container">
+    <h2>{{ title }}</h2>
+<div>
+    {{ content|safe }}
+</div>
+</div>
+
+</body>
+</html>

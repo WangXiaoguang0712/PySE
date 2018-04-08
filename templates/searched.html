@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="{% static 'common.css' %}" rel="stylesheet" type="text/css">
+    <!-- 引入 Bootstrap -->
+     <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+     <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+     <script type="text/javascript" src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.js' %}"></script>
+</head>
+<body>
+<div class="container" style="padding-left: 20px; margin-top:5px;">
+    <form action="/news_searched/" method="post" role="form">
+        <div class="form-group">
+            {% csrf_token %}
+            <input size="20" name="kw" value="{{ kw }}" class="form-control" style="width:30% ;display: inline-block"/>
+            <input type="submit" value="搜索" class="btn btn-default"  style="display: inline-block" />
+        </div>
+    </form>
+    <hr>
+    <div style="font-size:12px">为您找到{{ cnt }}条记录，用时：{{ tm }}s</div>
+    <hr>
+    <ul class="list-group">
+    {% for x in data %}
+        <li class="list-group-item"><a href="/news_detail/?kw={{ kw }}&addr={{ x.1 }}">{{ x.2 }}({{ x.3 }})</a></li>
+    {% endfor %}
+    </ul> 
+</div>
+
+</body>
+</html>
