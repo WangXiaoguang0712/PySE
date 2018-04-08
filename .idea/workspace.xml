@@ -79,7 +79,7 @@
       <file leaf-file-name="searched.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/searched.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5632184">
+            <state vertical-scroll-proportion="1.6925287">
               <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
@@ -535,7 +535,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26259542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -987,7 +987,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/searched.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5632184">
+        <state vertical-scroll-proportion="1.6925287">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
